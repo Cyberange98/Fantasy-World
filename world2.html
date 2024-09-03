@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Fantasy World 2</h1>
+        <button onclick="window.location.href='index.html'" class="magic-button">Back to the Magical Gateway</button>
+    </header>
+
+    <div class="main-image-container">
+        <img id="main-image" src="image13.png" alt="Main Image">
+    </div>
+    
+    <div class="thumbnail-gallery">
+        <img src="image13.png" alt="Thumbnail 1" class="thumbnail" onclick="changeMainImage('image13.png')">
+        <img src="image14.png" alt="Thumbnail 2" class="thumbnail" onclick="changeMainImage('image14.png')">
+        <img src="image15.png" alt="Thumbnail 3" class="thumbnail" onclick="changeMainImage('image15.png')">
+        <img src="image16.png" alt="Thumbnail 4" class="thumbnail" onclick="changeMainImage('image16.png')">
+    </div>
+
+    <script>
+        function changeMainImage(imageSrc) {
+            document.getElementById('main-image').src = imageSrc;
+        }
+    </script>
+</body>
+</html>
